@@ -4,7 +4,7 @@
 
 # Accessible Memory Game
 
-This game was passionately developed for Shopify for the Mobile Developer Intern (Android) - Fall 2020.
+Android game focused for Accessible users.
 
 ## Table of Contents
 
@@ -23,18 +23,13 @@ This game was passionately developed for Shopify for the Mobile Developer Intern
 
 ## About this project
 
-Thanks for taking time to read this. Some important consideration about this project:
-
-1. I tried to show case my skills and passion for Android by going above and beyond the original scope.
-2. I added a special flavour to this project by making it **Accessible**.
-3. I also included some other cool stuff such as automated tests and build, log Interceptor, and a Settings Screen.
-4. I tried to follow as much as I could the [Shopify POS](https://engineering.shopify.com/blogs/engineering/building-shopify-pos-android-using-mvvm) Architecture. The only thing I purposefully didn't add was the `Contracts` between the `View` and the `ViewModel`. Although I am familiar with this Design Pattern, as I have worked with MVP, I decided to use the `ViewModelProvider` to make the `View` `observe` the `LiveData`.
+* As stated at the [Statcan](https://www150.statcan.gc.ca/n1/pub/11-627-m/11-627-m2018035-eng.htm) around 22% of the Canadians has some sort of disability. Accessible Memory Game was developed with special consideration to make it usable for everyone
 
 ## Build Status
 
 [![Build status](https://badge.buildkite.com/fae4d188e43aa2339505c96c4c7c0c0cc506f018abd3c6c949.svg)](https://buildkite.com/minamidaniel/accessible-memory-game)
 
-## Project Requirements
+## Project Features
 
 
 ### `Basic` Requirements
@@ -56,7 +51,7 @@ List of items in section "Requirements:"
 
 ---
 
-### `Bonus` Requirements
+### `Advanced` Requirements
 
 <img align="right" width="100" height="100" src="https://media.indiedb.com/cache/images/games/1/35/34365/thumb_300x150/0_animation_Character_LevelUp.gif">
 
@@ -85,11 +80,10 @@ List of items in section "Bonuses!"
 ---
 
 - [x] Accessibility focused game
-    * As stated at the [Shopify's Accessibility Guide Lines](https://polaris.shopify.com/foundations/accessibility#navigation) around 20% of the North Americans has some sort of disability. Accessible Memory Game was developed with special consideration to make it usable for everyone. Four main accessibility considerations are in place in this project: 
+    * Three main accessibility considerations are in place in this project: 
         1. All UI elements have `Content Description` added to it. Content dynamically bind also includes appropriate descriptions.
         2. `Focus Order` is consistent. UI was designed to allow the natural flow of the Screen Reader.
         3. More than one `Feedback Mechanism` was implemented to serve users with different kids of disability.
-        4. `UI Colors` were chosen respecting the [Shopify's Color Guide Line](https://polaris.shopify.com/design/colors#navigation) having consideration about contrast and readability.
 
 - [x] Game configuration for impaired and non-impaired users
     * At Settings Page, users can switch Accessibility on/off. Switch off accessibility will enable features such as animations and sounds.
